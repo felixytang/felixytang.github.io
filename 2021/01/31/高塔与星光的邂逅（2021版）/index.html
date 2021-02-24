@@ -107,68 +107,6 @@
             <div class="container">
     
     
-        <div class="post-toc">
-    <div class="tocbot-list">
-    </div>
-    <div class="tocbot-list-menu">
-        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
-        <a onclick="go_top()">Back to top</a>
-        <a onclick="go_bottom()">Go to bottom</a>
-    </div>
-</div>
-
-<script>
-    document.ready(
-        function () {
-            tocbot.init({
-                tocSelector: '.tocbot-list',
-                contentSelector: '.post-content',
-                headingSelector: 'h1, h2, h3, h4, h5',
-                collapseDepth: 1,
-                orderedList: false,
-                scrollSmooth: true,
-            })
-        }
-    )
-
-    function expand_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 6,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "collapse_toc()");
-        b.innerHTML = "Collapse all"
-    }
-
-    function collapse_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 1,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "expand_toc()");
-        b.innerHTML = "Expand all"
-    }
-
-    function go_top() {
-        window.scrollTo(0, 0);
-    }
-
-    function go_bottom() {
-        window.scrollTo(0, document.body.scrollHeight);
-    }
-
-</script>
-    
 
     
     <article class="post-wrap">
@@ -191,7 +129,7 @@
         </header>
 
         <div class="post-content">
-            <h1 id="高塔与星光的邂逅（2021版）"><a href="#高塔与星光的邂逅（2021版）" class="headerlink" title="高塔与星光的邂逅（2021版）"></a>高塔与星光的邂逅（2021版）</h1><p>很多年前，我曾写过一篇叫做《高塔与星光的邂逅》的短文，起这个标题是受新海诚动画《追逐繁星的孩子》影响。当时只为发一下牢骚，抒一下青春之困扰，却想不到从此之后，我与天空的距离越来越近。这种距离体现在我的学业以及从事的工作上：我成为了一名专门研究地球系统科学的科研工作者。因此，我对天空的理解从最初的感性认识慢慢变得理性而深入，但不意味着感性认识的退让，我始终认为，这一份感性正是维系我和天空的情感纽带，正是这份情怀让我在科学研究的路上前进。</p>
+            <p>很多年前，我曾写过一篇叫做《高塔与星光的邂逅》的短文，起这个标题是受新海诚动画《追逐繁星的孩子》影响。当时只为发一下牢骚，抒一下青春之困扰，却想不到从此之后，我与天空的距离越来越近。这种距离体现在我的学业以及从事的工作上：我成为了一名专门研究地球系统科学的科研工作者。因此，我对天空的理解从最初的感性认识慢慢变得理性而深入，但不意味着感性认识的退让，我始终认为，这一份感性正是维系我和天空的情感纽带，正是这份情怀让我在科学研究的路上前进。</p>
 
         </div>
 
